@@ -1,0 +1,2 @@
+# alafaq-ai
+Stationery store
