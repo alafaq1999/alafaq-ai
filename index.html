@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مكتبة الأفق</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 مكتبة الأفق</h1>
+        <p>نظام إدارة المكتبة الذكي</p>
+    </header>
+
+    <main>
+
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 ابحث عن منتج..."
+            >
+  <div class="menu">
+
+    <button onclick="showProducts()">
+        📦 المنتجات
+    </button>
+
+    <button onclick="showStock()">
+        📊 المخزون
+    </button>
+
+    <button onclick="openAI()">
+        🤖 مساعد الأفق
+    </button>
+
+    <button onclick="createPost()">
+        📝 إنشاء منشور
+    </button>
+
+    <button onclick="addProductForm()">
+        ➕ إضافة منتج
+    </button>
+
+</div>
+
+        <section id="content">
+
+            <h2>أهلاً بك في مكتبة الأفق 🌹</h2>
+
+            <p>
+                اختر إحدى الخدمات من القائمة للبدء.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>مكتبة الأفق © 2026</p>
+    </footer>
+
+<script src="app.js?v=12"></script>
+<script src="ai.js?v=12"></script>
+
+</body>
+
+</html>
