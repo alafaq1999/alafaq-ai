@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 0 0 25px 25px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+main {
+    width: 92%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.menu button {
+    border: none;
+    padding: 22px 10px;
+    border-radius: 18px;
+    background: white;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.menu button:active {
+    transform: scale(0.97);
+}
+
+#content {
+    background: white;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    text-align: center;
+}
+
+#content h2 {
+    margin-bottom: 12px;
+}
+
+/* =========================
+   النماذج
+========================= */
+
+#content input,
+#content textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+#content textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#content input:focus,
+#content textarea:focus {
+    border-color: #1e3a5f;
+}
+
+/* =========================
+   الأزرار
+========================= */
+
+#content button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #1e3a5f;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#content button:active {
+    transform: scale(0.98);
+}
+
+/* =========================
+   بطاقة المنتج
+========================= */
+
+.product {
+    background: #f8f9fb;
+    padding: 16px;
+    margin: 12px 0;
+    border-radius: 15px;
+    text-align: right;
+    border: 1px solid #eee;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+    color: #1e3a5f;
+}
+
+.product p {
+    margin: 7px 0;
+}
+
+/* =========================
+   أزرار المنتج
+========================= */
+
+.product-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.product-actions button {
+    margin-top: 0 !important;
+    font-size: 15px !important;
+}
+
+.product-actions .edit-btn {
+    background: #287a45;
+}
+
+.product-actions .delete-btn {
+    background: #b52b2b;
+}
+
+/* =========================
+   المخزون
+========================= */
+
+.stock-box {
+    background: #f8f9fb;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 18px;
+    margin: 12px 0;
+}
+
+.stock-box h3 {
+    margin-bottom: 8px;
+    color: #1e3a5f;
+}
+
+.stock-box p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* =========================
+   بطاقة المخزون
+========================= */
+
+.stock-product {
+    background: #f8f9fb;
+    padding: 16px;
+    margin: 12px 0;
+    border-radius: 15px;
+    text-align: right;
+    border: 1px solid #eee;
+}
+
+.stock-product h3 {
+    color: #1e3a5f;
+    margin-bottom: 10px;
+}
+
+.stock-product p {
+    margin: 7px 0;
+}
+
+/* =========================
+   مخزون قليل
+========================= */
+
+.low-stock {
+    border: 2px solid #e0a100;
+    background: #fff9e6;
+}
+
+.low-stock-warning {
+    color: #a56a00;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* =========================
+   مخزون نافد
+========================= */
+
+.out-of-stock {
+    border: 2px solid #b52b2b;
+    background: #fff0f0;
+}
+
+.out-of-stock-warning {
+    color: #b52b2b;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* =========================
+   المنشور
+========================= */
+
+.post {
+    background: #f8f9fb;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 18px;
+    margin-top: 15px;
+    text-align: right;
+    line-height: 1.8;
+}
+
+/* =========================
+   التذييل
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    font-size: 14px;
+}
+/* =========================
+   🛒 شاشة البيع
+========================= */
+
+.sale-screen {
+    text-align: center;
+}
+
+.sale-screen h2 {
+    margin-bottom: 20px;
+}
+
+.sale-screen .stock-box {
+    margin: 12px 0;
+}
+
+.sale-screen .stock-box p {
+    font-size: 22px;
+}
+
+.sale-screen label {
+    direction: rtl;
+}
+
+.sale-screen input {
+    text-align: center;
+    font-size: 22px !important;
+    font-weight: bold;
+}
+
+.sale-screen button {
+    margin-top: 12px;
+}
+
+
+/* =========================
+   🛒 زر البيع
+========================= */
+
+.product-actions button:first-child {
+    background: #1e3a5f !important;
+    color: white !important;
+}
